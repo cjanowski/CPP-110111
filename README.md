@@ -1,7 +1,6 @@
-# Thread-Safe LRU Cache - C++ Interview Project
+# Thread-Safe LRU Cache
 
-A production-quality, thread-safe LRU (Least Recently Used) cache implementation demonstrating advanced C++ concepts suitable for professional engineer interviews.
-
+A production-quality, thread-safe LRU (Least Recently Used) cache implementation demonstrating advanced C++ concepts.
 ## Features
 
 - **Generic Template Design**: Supports any key-value types with customizable hash and equality functions
@@ -79,7 +78,7 @@ std::cout << "Hit ratio: " << metrics.hit_ratio * 100 << "%" << std::endl;
 - **Memory Overhead**: ~56 bytes per entry + key/value sizes
 - **Contention**: Optimized for read-heavy workloads
 
-## Interview Discussion Points
+## Discussion Points
 
 ### 1. Design Decisions
 - **Why LRU?** Most practical eviction policy for caches
@@ -129,5 +128,3 @@ Typical performance on modern hardware:
 - **Move Semantics**: Efficient resource transfer
 - **RAII**: Automatic resource management
 - **const-correctness**: Proper const usage throughout
-
-This implementation serves as an excellent foundation for discussing systems programming, concurrency, performance optimization, and production software engineering practices.
